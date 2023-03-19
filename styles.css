@@ -1,3 +1,12 @@
 .description {
     text-transform: capitalize;
+
+}
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: ; */
+}
+.day-1, .day-2, .day-3, .day-4, .day-5 {
+    border: 3px solid blue;
 }

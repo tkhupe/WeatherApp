@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>jQuery lesson</title>
-        <script type="text/javascript" src="/script.js"></script>
+        
         <script src="./jquery/jquery.js"></script>
         <link rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -48,10 +48,16 @@
             $(".card").append("<div class='description'>Description:</div>");
             $(".card").append("<div class='humidity'>Humidity: 60%</div>");
             $(".card").append("<div class='wind'>Wind speed: 25mph</div>");
+            $(".card").append("<div class=wrap>");
             // $(".card").css("color", "orange");
             // $("h1").css("border", "60px solid green");
             // $("h1:first").css("border", "60px solid red");
             // $("h1:last").css("border", "60px solid blue");
+            $(".wrap").append("<div class='col-sm-4 day-1'>day</div>");
+            $(".wrap").append("<div class='col-sm-4 day-2'>day</div>");
+            $(".wrap").append("<div class='col-sm-4 day-3'>day</div>");
+            $(".wrap").append("<div class='col-sm-4 day-4'>day</div>");
+            $(".wrap").append("<div class='col-sm-4 day-5'>day</div>");
             $("body").css("background", "Url('./assets/images/azamat.jpg')");
             $("#dataCollect").append("<input type='text' id='info'></input>");
             $("#dataCollect").append("<button id='submit'>Submit</button>");
@@ -110,7 +116,7 @@
         /* height: 70px; */
         background-color: lime;
         margin: 0%;
-        max-width: 520px;
+        max-width: 992px;
         border-radius: 10px;
         /* border: 10px solid blue; */
         
@@ -139,4 +145,5 @@
         <div id="location"></div> -->
 
     </body>
+    <script type="text/javascript" src="/script.js"></script>
 </html>
