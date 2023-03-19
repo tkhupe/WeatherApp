@@ -21,11 +21,11 @@
             document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
             document.querySelector(".wind").innerText = "Wind Speed: " + speed + "MPH";
             document.querySelector(".description").innerText = description;
-            document.querySelector(".temperature").innerText = temp + "°" + "F";
+            document.querySelector(".temperature").innerText = temp + "°F";
 
             let day1Ele =document.querySelector(".day-1");
             day1Ele.querySelector('.dayDisplay').textContent=  dayjs().add(1, 'day').format("DD MMM YYYY");;
-            day1Ele.querySelector('.tempDisplay').textContent= "Temperature: "+ data.list[1].main.temp;
+            day1Ele.querySelector('.tempDisplay').textContent= data.list[1].main.temp + "°F";
             day1Ele.querySelector('.descDisplay').textContent= data.list[1].weather[0].description;
             day1Ele.querySelector('.humidityDisplay').textContent= "Humidity: " +  data.list[1].main.humidity + "%";
             day1Ele.querySelector(".windDisplay").textContent = "Wind Speed: " + speed + "MPH";
@@ -33,7 +33,7 @@
 
             let day2Ele =document.querySelector(".day-2");
             day2Ele.querySelector('.dayDisplay').textContent=  dayjs().add(2, 'day').format("DD MMM YYYY");;
-            day2Ele.querySelector('.tempDisplay').textContent= "Temperature: "+ data.list[2].main.temp;
+            day2Ele.querySelector('.tempDisplay').textContent= data.list[2].main.temp + "°F";
             day2Ele.querySelector('.humidityDisplay').textContent= "Humidity: " +  data.list[2].main.humidity + "%";
             day2Ele.querySelector(".windDisplay").textContent = "Wind Speed: " + speed + "MPH";
             day2Ele.querySelector('.descDisplay').textContent= data.list[2].weather[0].description;
@@ -41,7 +41,7 @@
 
             let day3Ele =document.querySelector(".day-3");
             day3Ele.querySelector('.dayDisplay').textContent=  dayjs().add(3, 'day').format("DD MMM YYYY");;
-            day3Ele.querySelector('.tempDisplay').textContent= "Temperature: "+ data.list[3].main.temp;
+            day3Ele.querySelector('.tempDisplay').textContent= data.list[3].main.temp + "°F";
             day3Ele.querySelector('.humidityDisplay').textContent= "Humidity: " +  data.list[3].main.humidity + "%";
             day3Ele.querySelector(".windDisplay").textContent = "Wind Speed: " + speed + "MPH";
             day3Ele.querySelector('.descDisplay').textContent= data.list[3].weather[0].description;
@@ -49,10 +49,10 @@
 
             let day4Ele =document.querySelector(".day-4");
             day4Ele.querySelector('.dayDisplay').textContent=  dayjs().add(4, 'day').format("DD MMM YYYY");;
-            day4Ele.querySelector('.tempDisplay').textContent= "Temperature: "+ data.list[4].main.temp;
+            day4Ele.querySelector('.tempDisplay').textContent= data.list[4].main.temp + "°F";
             day4Ele.querySelector('.humidityDisplay').textContent= "Humidity: " +  data.list[4].main.humidity + "%";
             day4Ele.querySelector(".windDisplay").textContent = "Wind Speed: " + speed + "MPH";
-            day4Ele.querySelector('.descDisplay').textContent= "Description: "+ data.list[4].weather[0].description;
+            day4Ele.querySelector('.descDisplay').textContent= data.list[4].weather[0].description;
             day4Ele.querySelector('.icon').src =  "https://openweathermap.org/img/wn/" +  data.list[4].weather[0].icon + "@2x.png";
 
 
