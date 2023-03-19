@@ -3,7 +3,6 @@ var urlUnits = "https://api.openweathermap.org/data/2.5/weather?lat=57&lon=-2.15
 var weather = {
     "apiKey": "586ae82c4371851edd7b4bc796dc1a7b",
     fetchWeather: function(city) {
-        // fetch("https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=586ae82c4371851edd7b4bc796dc1a7b")
          fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + this.apiKey + "&units=imperial")
         .then((response) => response.json())
         .then((data) => this.displayWeather(data));
