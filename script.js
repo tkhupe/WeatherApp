@@ -54,20 +54,41 @@
 
             
         },
-        searchCity: function () {
-            this.fetchWeather(document.querySelector(".searchBar").value)
+        searchCity: function (city) {
+            this.fetchWeather(city)
         }
 
     };
-
+    function displayCity(){
+        let cities = JSON.parse(window.localStorage.getItem('cities'));
+        if(cities == null) 
+            cities= [];
+        for(let i = 0; i < cities.length; i++){
+            $(".listCities").append('<li><a href="#" class="citiItem">'+cities[i]+'</a></li>')
+        }
+    }
     $("document").ready(function() {
 
     document.querySelector(".searchButton").addEventListener("click", function () {
-        weather.searchCity();
+        var cityName =  document.querySelector(".searchBar").value;
+        weather.searchCity( cityName);
+        let cities = JSON.parse(window.localStorage.getItem('cities'));
+        if(cities == null) 
+            cities= [];
+        cities.push( cityName)   ;
+        $(".listCities").append('<li><a href="#" class="citiItem">'+cityName+'</a></li>')
+        localStorage.setItem('cities',JSON.stringify(cities));
+        document.querySelector(".searchBar").value = "";
 
 
     });
+    displayCity();
+    $(document).on('click','.citiItem',function(e){
+        e.preventDefault();
+        weather.searchCity( $(this).text());
+    })
     document.querySelector(".currentDay").textContent =dayjs().format("DD MMM YYYY");
+   
    // document.querySelector(".day-1").textContent = dayjs().add(1, 'day').format("DD MMM YYYY");
     //document.querySelector(".day-2").textContent = dayjs().add(2, 'day').format("DD MMM YYYY");
     //document.querySelector(".day-3").textContent = dayjs().add(3, 'day').format("DD MMM YYYY");

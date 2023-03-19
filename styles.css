@@ -4,9 +4,19 @@
 }
 .wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
 
 }
-.day-1, .day-2, .day-3, .day-4, .day-5 {
+.day-1, .day-2, .day-3, .day-4 {
     border: 3px solid blue;
+}
+.searchBar {
+    display: block;
+    width: 250px !important;
+    margin: 0 auto;
+    text-align: center;
+}
+.citiItem {
+    text-transform: capitalize;
 }

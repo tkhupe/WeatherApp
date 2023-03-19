@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>jQuery lesson</title>
-        
+
         <script src="./jquery/jquery.js"></script>
         <link rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -13,7 +13,6 @@
             crossorigin="anonymous">
         <link rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="styles.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
             rel="stylesheet"
@@ -30,7 +29,9 @@
             integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
             crossorigin="anonymous"
             />
-            <link type="text/css" rel="stylesheet" href="./materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="./materialize.min.css"
+            media="screen,projection"/>
+        <link rel="stylesheet" href="./styles.css">
         <script>
 
         $("document").ready(function() {            
@@ -38,7 +39,7 @@
             $(".card").append("<div class='currentDay'></div>");
             $(".card").append("<div class='search'></div>");
             // $(".card").append("<input type='text' class='searchBar'></input>");
-            $(".card").append("<input type='text' class='searchBar' id='info'></input>")
+            $(".card").append("<input type='text' class='searchBar' id='info' ></input>")
             $(".card").append("<button class='searchButton' >Search for a City</button>");
             $(".card").append("<div class='weather'></div>");
             $(".card").append("<h2 class='city'>Weather in Denver</h2>");
@@ -47,28 +48,27 @@
             $(".card").append("<div class='description'>Description:</div>");
             $(".card").append("<div class='humidity'>Humidity: 60%</div>");
             $(".card").append("<div class='wind'>Wind speed: 25mph</div>");
-            $(".card").append("<div class=wrap>");
-            $(".wrap").append("<div class='col-sm-4 day-1'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div><div class='descDisplay'></div></div>");
-            $(".wrap").append("<div class='col-sm-4 day-2'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div><div class='descDisplay'></div></div>");
-            $(".wrap").append("<div class='col-sm-4 day-3'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div><div class='descDisplay'></div></div>");
-            $(".wrap").append("<div class='col-sm-4 day-4'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div><div class='descDisplay'></div></div>");
+            $(".card").append("<div class='wrap row'></div>");
+            $(".wrap").append("<div class='col-sm-3 day-1'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div><div class='descDisplay'></div></div>");
+            $(".wrap").append("<div class='col-sm-3 day-2'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div><div class='descDisplay'></div></div>");
+            $(".wrap").append("<div class='col-sm-3 day-3'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div><div class='descDisplay'></div></div>");
+            $(".wrap").append("<div class='col-sm-3 day-4'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div><div class='descDisplay'></div></div>");
             $("body").css("background", "Url('./assets/images/azamat.jpg')");
             $("#dataCollect").append("<input type='text' id='info'></input>");
             $("#dataCollect").append("<button id='submit'>Submit</button>");
+            $(".card").append("<h5>History</h5><ul class='listCities'></ul>");
+
             
         });
 
     </script>
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-    crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./materialize.min.js"></script>
-
-  
-
-<style>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+            integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./materialize.min.js"></script>
+        <style>
     body{
         display: flex;
         justify-content: center;
@@ -99,10 +99,9 @@
 
 
 </style>
-
     </head>
     <body>
 
     </body>
-    <script type="text/javascript" src="/script.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </html>
