@@ -33,10 +33,9 @@
             <link type="text/css" rel="stylesheet" href="./materialize.min.css"  media="screen,projection"/>
         <script>
 
-        $("document").ready(function() {
-            $("#nav").load("nav.html");
-
+        $("document").ready(function() {            
             $("body").append("<div class='card'></div>");
+            $(".card").append("<div class='currentDay'></div>");
             $(".card").append("<div class='search'></div>");
             // $(".card").append("<input type='text' class='searchBar'></input>");
             $(".card").append("<input type='text' class='searchBar' id='info'></input>")
