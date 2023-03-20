@@ -1,7 +1,5 @@
 // window.onload = $(function () {
-    
-    var city;
-    // var urlUnits = "https://api.openweathermap.org/data/2.5/weather?lat=57&lon=-2.15&appid={API key}&units=metric";
+    var city;    
     const weather = {
         "apiKey": "586ae82c4371851edd7b4bc796dc1a7b",
         fetchWeather: function (city) {
@@ -68,7 +66,7 @@
         if(cities == null) 
             cities= [];
         for(let i = 0; i < cities.length; i++){
-            $(".listCities").append('<li><a href="#" class="citiItem">'+ cities[i] +'</a></li>')
+            $(".listCities").append('<ul><a href="#" class="citiItem">'+ cities[i] +'</a></ul>')
         }
     }
     $("document").ready(function() {
@@ -80,7 +78,7 @@
         if(cities == null) 
             cities= [];
         cities.push(cityName)   ;
-        $(".listCities").append('<li><a href="#" class="citiItem">'+ cityName +'</a></li>')
+        $(".listCities").append('<ul><a href="#" class="citiItem">'+ cityName +'</a></ul>')
         localStorage.setItem('cities',JSON.stringify(cities));
         document.querySelector(".searchBar").value = "";
 
