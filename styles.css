@@ -3,7 +3,7 @@
 
 }
 .wrap {
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     width: 100%;
 
@@ -22,4 +22,9 @@
 }
 .descDisplay {
     text-transform: capitalize;
+}
+
+.listCities {
+    overflow-y: auto !important;
+    overflow-x: auto;
 }
