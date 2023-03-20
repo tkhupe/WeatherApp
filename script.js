@@ -70,7 +70,7 @@ function displayCity() {
 
 $("document").ready(function () {
 
-    document.querySelector(".searchButton").addEventListener("click", function () {
+    document.querySelector(".btn").addEventListener("click", function () {
         var cityName = document.querySelector(".searchBar").value;
         weather.searchCity(cityName);
         let cities = JSON.parse(window.localStorage.getItem('cities'));
