@@ -90,7 +90,7 @@ $("document").ready(function () {
         weather.searchCity($(this).text());
     });
 
-    document.querySelector(".clearHistory").addEventListener("click", function () {
+    document.querySelector(".btn-floating").addEventListener("click", function () {
         document.querySelector(".listCities").textContent = "";
 
     });
