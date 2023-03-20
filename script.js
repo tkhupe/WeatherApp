@@ -1,4 +1,3 @@
-// window.onload = $(function () {
 var city;
 const weather = {
     "apiKey": "586ae82c4371851edd7b4bc796dc1a7b",
@@ -53,9 +52,8 @@ const weather = {
         day4Ele.querySelector('.descDisplay').textContent = data.list[4].weather[0].description;
         day4Ele.querySelector('.icon').src = "https://openweathermap.org/img/wn/" + data.list[4].weather[0].icon + "@2x.png";
 
-
-
     },
+
     searchCity: function (city) {
         this.fetchWeather(city)
     }
@@ -69,6 +67,7 @@ function displayCity() {
         $(".listCities").append('<ul><a href="#" class="citiItem">' + cities[i] + '</a></ul>')
     }
 }
+
 $("document").ready(function () {
 
     document.querySelector(".searchButton").addEventListener("click", function () {
@@ -82,7 +81,6 @@ $("document").ready(function () {
         localStorage.setItem('cities', JSON.stringify(cities));
         document.querySelector(".searchBar").value = "";
 
-
     });
 
     displayCity();
@@ -92,13 +90,11 @@ $("document").ready(function () {
         weather.searchCity($(this).text());
     });
 
-    
     document.querySelector(".clearHistory").addEventListener("click", function () {
         document.querySelector(".listCities").textContent = "";
 
     });
 
     document.querySelector(".currentDay").textContent = dayjs().format("DD MMM YYYY");
-
-    // document.querySelector(".day-5").textContent = dayjs().add(5, 'day').format("DD MMM YYYY");
+    
 });
