@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>jQuery lesson</title>
+        <title>WeatherApp</title>
 
         <script src="./jquery/jquery.js"></script>
         <link rel="stylesheet"
@@ -39,11 +39,11 @@
             $(".card").append("<div class='currentDay'></div>");
             $(".card").append("<div class='search'></div>");
             // $(".card").append("<input type='text' class='searchBar'></input>");
-            $(".card").append("<input type='text' class='searchBar' id='info' ></input>")
+            $(".card").append("<form autocomplete='off'><div><input type='text' class='searchBar' id='info' ></input></div></form>")
             $(".card").append("<button class='searchButton' >Search for a City</button>");
             $(".card").append("<div class='weather'></div>");
-            $(".card").append("<h2 class='city'>Weather in Denver</h2>");
-            $(".card").append("<h3 class='temperature'>70 °F</h3>");
+            $(".card").append("<h3 class='city'>Weather in Denver</h3>");
+            $(".card").append("<h4 class='temperature'>70 °F</h4>");
             $(".card").append("<img src='' alt='' class='icon' />");
             $(".card").append("<div class='description'>Description:</div>");
             $(".card").append("<div class='humidity'>Humidity: 60%</div>");
