@@ -40,6 +40,7 @@
 
         $("document").ready(function() {
             $("body").append("<div class='card col-lg-12'></div>");
+            $(".card").append("<div class='container'></div>");
             $(".card").append("<div class='currentDay'>'<div class='search'></div></div>");
             $(".card").append("<div><input type='text' class='searchBar' id='info' ></input></div>")
             $(".card").append("<button class='btn waves-effect' ><i class='material-icons left'>search</i> Search for a City</button>");
@@ -55,7 +56,7 @@
             $(".wrap").append("<div class='col-sm-3 orange day-2'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='descDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div></div>");
             $(".wrap").append("<div class='col-sm-3 yellow day-3'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='descDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div></div>");
             $(".wrap").append("<div class='col-sm-3 pink day-4'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='descDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div></div>");
-            $("body").css("background", "Url('./assets/images/azamat.jpg')");;
+            $("body").css("background", "Url('./assets/images/azamat.jpg')");
             $(".card").append("<button class='btn-flat waves-effect waves-light red'>Clear</button>");
             $(".card").append("<h5>History</h5><ul class='listCities'></ul>");
 
