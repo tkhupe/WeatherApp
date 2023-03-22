@@ -27,6 +27,7 @@
 
 .citiItem {
     text-transform: capitalize;
+    padding: 1rem;
 }
 
 .descDisplay {
@@ -44,13 +45,23 @@
     padding: 3px;
 }
 .listCities {
+    display: flex;
+    
     overflow-y: auto !important;
     overflow-x: auto;
 }
 
+ 
+
 @media screen and (max-width: 992px) {
     .card {
-        width: 70%
+        width: 100vh;
+        height: 100vh !important;
+
+    }
+    body {
+        background-image: none !important;
+        background: lime !important;
     }
 
 }
