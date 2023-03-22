@@ -99,5 +99,6 @@ $("document").ready(function () {
 
     $(".wrap").addClass("hoverable");
     $(".card").addClass("pulse");
+    // $("h5").addClass("material-icons history");
     
 });
