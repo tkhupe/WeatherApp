@@ -57,8 +57,11 @@
             $(".wrap").append("<div class='col-sm-3 yellow day-3'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='descDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div></div>");
             $(".wrap").append("<div class='col-sm-3 pink day-4'><div class='dayDisplay'></div><img src='' alt='' class='icon' /><div class='tempDisplay'></div><div class='descDisplay'></div><div class='humidityDisplay'></div><div class='windDisplay'></div></div>");
             $("body").css("background", "Url('./assets/images/azamat.jpg')");
-            $(".card").append("<button class='btn-flat waves-effect waves-light red'>Clear</button>");
-            $(".card").append("<h5>History</h5><ul class='listCities'></ul>");
+            $(".card").append("<div class='box row'></div>");
+            $(".box").append("<div class='col-md-6 box-1'></div>");
+            $(".box-1").append("<button class='btn-flat waves-effect waves-light red'>Clear</button>");
+            $(".box").append("<div class='col-md-6 box-2'></div>");
+            $(".box-2").append("<h5>History</h5><ul class='listCities'></ul>");
             
         });
         

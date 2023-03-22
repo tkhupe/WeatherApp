@@ -21,6 +21,10 @@
     text-align: center;
 }
 
+.container {
+    padding: auto;
+}
+
 .citiItem {
     text-transform: capitalize;
 }
@@ -28,7 +32,17 @@
 .descDisplay {
     text-transform: capitalize;
 }
-
+.box {
+    display: inline;
+    justify-content: space-around;
+    width: 100%;
+    padding: auto;
+}
+.box-2 {
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
 .listCities {
     overflow-y: auto !important;
     overflow-x: auto;
