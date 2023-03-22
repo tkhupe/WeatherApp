@@ -96,5 +96,7 @@ $("document").ready(function () {
     });
 
     document.querySelector(".currentDay").textContent = dayjs().format("DD MMM YYYY");
+
+    $(".wrap").addClass("hoverable");
     
 });
