@@ -40,10 +40,12 @@
             
         $("document").ready(function() {
             $("body").append("<div class='card col-lg-12'></div>");
-            $(".card").append("<div class='container'></div>");
+            $(".card").append("<nav class='navig'></nav>");
+            $(".navig").append("<div class='nav-wrap'></div>");
+            // $(".container").append("<form class='form-horizontal></form>");
             $(".card").append("<div class='currentDay'>'<div class='search'></div></div>");
-            $(".container").append("<div><input type='text' class='searchBar' id='info' ></input></div>")
-            $(".container").append("<button class='btn waves-effect' ><i class='material-icons left'>search</i> Search for a City</button>");
+            $(".nav-wrap").append("<div><input type='text' class='searchBar' id='info' ></input></div>")
+            $(".nav-wrap").append("<button class='btn waves-effect' ><i class='material-icons left'>search</i> Search for a City</button>");
             $(".card").append("<div class='weather'></div>");
             $(".card").append("<h3 class='city'>Current Weather in Denver</h3>");
             $(".card").append("<h4 class='temperature'>70 °F</h4>");
