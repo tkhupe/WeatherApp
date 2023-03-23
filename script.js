@@ -99,6 +99,8 @@ $("document").ready(function () {
 
     $(".wrap").addClass("hoverable");
     $(".card").addClass("pulse");
+    $(".searchList").addClass("collection")
+    $(".listCities").addClass("collection-item");
     // $("h5").addClass("material-icons history");
     
 });
