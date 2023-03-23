@@ -64,7 +64,7 @@ function displayCity() {
     if (cities == null)
         cities = [];
     for (let i = 0; i < cities.length; i++) {
-        $(".listCities").append('<ul><a href="#" class="citiItem">' + cities[i] + '</a></ul>');
+        $(".listCities").append('<ul><a href="#" class="collection-item citiItem">' + cities[i] + '</a></ul>');
     }
 }
 
