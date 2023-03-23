@@ -101,6 +101,6 @@ $("document").ready(function () {
     $(".card").addClass("pulse");
     $(".searchList").addClass("collection")
     $(".listCities").addClass("collection-item");
-    // $("h5").addClass("material-icons history");
+    $(".navig").addClass("z-depth-6");
     
 });
